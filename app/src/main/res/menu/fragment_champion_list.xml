@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/sortByName"
+        android:title="@string/sort_by_name"
+        app:showAsAction="never"/>
+    <item android:id="@+id/sortByWins"
+        android:title="@string/sort_by_wins"
+        app:showAsAction="never"/>
+    <item android:id="@+id/sortByLosses"
+        android:title="@string/sort_by_losses"
+        app:showAsAction="never"/>
+    <item android:id="@+id/sortByTimePlayed"
+        android:title="@string/sort_by_time_played"
+        app:showAsAction="never"/>
+</menu>

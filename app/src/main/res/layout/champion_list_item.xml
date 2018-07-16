@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/winRate"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Win Rate"
+        android:textColor="@color/colorOrange"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toEndOf="@+id/losses"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/losses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/losses"
+        android:textColor="@color/colorOrange"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/wins"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/ivChampionImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChampionName"
+        app:srcCompat="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tvChampionName"
+        android:layout_width="329dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="name"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorOrange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWinratio"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="100%"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toEndOf="@+id/losses"
+        app:layout_constraintTop_toBottomOf="@+id/winRate" />
+
+    <TextView
+        android:id="@+id/tvWins"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="10000"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/ivChampionImage"
+        app:layout_constraintTop_toBottomOf="@+id/wins" />
+
+    <TextView
+        android:id="@+id/tvLosses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:text="10000"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/wins"
+        app:layout_constraintTop_toBottomOf="@+id/losses" />
+
+    <TextView
+        android:id="@+id/tvTimePlayedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/time_played"
+        android:textColor="@color/colorOrange"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/ivChampionImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvWins" />
+
+    <TextView
+        android:id="@+id/tvTimePlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="12"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTimePlayedTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvLosses" />
+
+    <TextView
+        android:id="@+id/wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/wins"
+        android:textColor="@color/colorOrange"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/ivChampionImage"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@color/colorOrange"
+        app:layout_constraintTop_toBottomOf="@+id/tvChampionName" />
+
+    <TextView
+        android:id="@+id/tvChampionLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="25"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivChampionImage"
+        app:layout_constraintEnd_toEndOf="@+id/ivChampionImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivChampionImage"
+        app:layout_constraintTop_toTopOf="@+id/ivChampionImage"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

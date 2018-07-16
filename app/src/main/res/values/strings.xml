@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BattleriteChampionStatistics</string>
+    <string name="wins">Wins</string>
+    <string name="losses">Losses</string>
+    <string name="Win_rate">Win Rate</string>
+    <string name="time_played">Time Played</string>
+    <string name="search">Search</string>
+    <string name="battlerite_player_stats">Battlerite Player Stats</string>
+    <string name="total_wins">Total Wins</string>
+    <string name="total_losses">Total Losses</string>
+    <string name="view_champion_statistics">View Champion Statistics</string>
+    <string name="battlerite_player_lookup">Battlerite Player Lookup</string>
+
+    <string name="user_statistics">User Statistics</string>
+    <string name="champion_statistics">Champion Statistics</string>
+
+    <string name="sort_by_name">Sort: By Name</string>
+    <string name="sort_by_wins">Sort: By Wins</string>
+    <string name="sort_by_losses">Sort: By Losses</string>
+    <string name="sort_by_time_played">Sort: By Time Played</string>
+</resources>
