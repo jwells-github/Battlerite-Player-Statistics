@@ -16,7 +16,7 @@ The user is also able to view statistics for each individual Battlerite champion
 
 ![App user overview](https://github.com/jwells-github/Battlerite-Player-Statistics/blob/master/userOverview.png?raw=true)
 
-The statistics for each indidual champion are held in a list and are shown to the user via a recyclerview. 
+The statistics for each individual champion are held in a list and are shown to the user via a recyclerview. 
 
 The user is able to see the wins, losses, win rate, champion level and time played for each champion
 
